@@ -1,0 +1,74 @@
+
+
+                     SUMMARY OF  PM7 CALCULATION
+
+                                                       MOPAC v22.0.6 Linux
+                                                       Mon Mar 25 22:33:29 2024
+
+           Empirical Formula: C8 H10 N3 O8  =    29 atoms
+
+ PM7 BONDS AUX DUMP=30M ITRY=15000 T=14D CHARGE=-1 SINGLET eps=78.4 RELSCF=1
+ Title: ASE calculation
+
+
+
+     GEOMETRY OPTIMISED USING EIGENVECTOR FOLLOWING (EF).     
+     SCF FIELD WAS ACHIEVED                                   
+
+          HEAT OF FORMATION       =       -216.39311 KCAL/MOL =    -905.38878 KJ/MOL
+          DIELECTRIC ENERGY       =         -4.90809 EV
+          GRADIENT NORM           =          8.77531          =       1.62953 PER ATOM
+          DIPOLE                  =         33.18835 DEBYE   POINT GROUP:  C1  
+          NO. OF FILLED LEVELS    =         53
+          CHARGE ON SYSTEM        =         -1
+          IONIZATION POTENTIAL    =         10.258560 EV
+          HOMO LUMO ENERGIES (EV) =        -10.259 -1.930
+          MOLECULAR WEIGHT        =        276.1823
+          COSMO AREA              =        305.94 SQUARE ANGSTROMS
+          COSMO VOLUME            =        301.20 CUBIC ANGSTROMS
+
+          MOLECULAR DIMENSIONS (Angstroms)
+
+            Atom       Atom       Distance
+            O    22    O    11    11.50279
+            O    25    H    16     7.84016
+            O    21    H    23     5.30351
+          SCF CALCULATIONS        =         12
+          WALL-CLOCK TIME         =      0.664 SECONDS
+          COMPUTATION TIME        =     56.444 SECONDS
+
+
+          FINAL GEOMETRY OBTAINED
+ PM7 BONDS AUX DUMP=30M ITRY=15000 T=14D CHARGE=-1 SINGLET eps=78.4 RELSCF=1
+ Title: ASE calculation
+
+  C    -0.77463000 +1   1.15981000 +1  -0.03181000 +1
+  C     0.57960000 +1   1.17834000 +1   0.32139000 +1
+  C     1.31750000 +1  -0.01022000 +1   0.30630000 +1
+  C     0.69150000 +1  -1.20409000 +1  -0.04863000 +1
+  C    -0.67107000 +1  -1.20107000 +1  -0.38372000 +1
+  C    -1.42389000 +1  -0.02537000 +1  -0.38728000 +1
+  H     1.05198000 +1   2.13250000 +1   0.60762000 +1
+  H     1.24662000 +1  -2.15508000 +1  -0.06567000 +1
+  H    -2.49401000 +1  -0.02996000 +1  -0.65583000 +1
+  N    -1.31123000 +1  -2.45023000 +1  -0.73645000 +1
+  O    -2.49482000 +1  -2.44517000 +1  -1.04224000 +1
+  O    -0.64787000 +1  -3.47722000 +1  -0.71843000 +1
+  C     2.77024000 +1   0.04019000 +1   0.70776000 +1
+  H     2.84763000 +1   0.52252000 +1   1.73199000 +1
+  C     3.49427000 +1  -1.29826000 +1   0.74480000 +1
+  H     4.55145000 +1  -1.18730000 +1   1.04584000 +1
+  H     3.50459000 +1  -1.80825000 +1  -0.23040000 +1
+  H     3.04441000 +1  -1.99109000 +1   1.47332000 +1
+  N     3.54254000 +1   0.93088000 +1  -0.23578000 +1
+  O     4.73738000 +1   1.07220000 +1  -0.03253000 +1
+  O     2.95902000 +1   1.47957000 +1  -1.15142000 +1
+  O     2.58941000 +1   3.45965000 +1   7.41931000 +1
+  H     2.89024000 +1   2.66993000 +1   7.71263000 +1
+  N    -1.52429000 +1   2.39881000 +1  -0.02955000 +1
+  O    -2.70108000 +1   2.37641000 +1  -0.35677000 +1
+  O    -0.95515000 +1   3.42987000 +1   0.29670000 +1
+  H     2.39957000 +1   1.76825000 +1   4.27873000 +1
+  H     2.91304000 +1   2.35123000 +1   5.58678000 +1
+  O     3.20087000 +1   1.84688000 +1   4.80336000 +1
+

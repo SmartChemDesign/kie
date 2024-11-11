@@ -1,0 +1,125 @@
+ *******************************************************************************
+ **                                                                           **
+ **                              MOPAC v22.0.6                                **
+ **                                                                           **
+ *******************************************************************************
+ **          Digital Object Identifier (DOI): 10.5281/zenodo.6511958          **
+ **    Visit the DOI location for information on how to cite this program.    **
+ *******************************************************************************
+
+                              PM7 CALCULATION RESULTS
+
+ *******************************************************************************
+ *  CALCULATION DONE:                                Sun Mar 24 12:26:16 2024  *
+ *  PM7        - The PM7 Hamiltonian to be used
+ *  SINGLET    - SPIN STATE DEFINED AS A SINGLET
+ *
+ *
+ *
+ *                 CHARGE ON SYSTEM = -1
+ *
+ *
+ *
+ *  EPS=78.4   - USE ANDREAS KLAMT'S COSMO IMPLICIT SOLVATION MODEL
+ *  LET        - OVERRIDE SOME SAFETY CHECKS
+ *  THREADS    - USE A MAXIMUM OF 30 THREADS
+ *  T=         - A TIME OF 14.0 DAYS REQUESTED
+ *  DUMP=N     - RESTART FILE WRITTEN EVERY 30.0 MINUTES REQUESTED
+ *  RELSCF     - DEFAULT SCF CRITERION MULTIPLIED BY 1.0000
+ *              (DEFAULT SCF CRITERION = 0.00010)
+ *  ITRY=      - DO A MAXIMUM OF 15000 ITERATIONS FOR SCF
+ *  AUX        - OUTPUT AUXILIARY INFORMATION
+ *  ISOTOPE    - SAVE THE FORCE MATRIX FOR USE LATER
+ *  BONDS      - FINAL BOND-ORDER MATRIX TO BE PRINTED
+ *  LARGE      - EXPANDED OUTPUT TO BE PRINTED
+ *  THERMO     - THERMODYNAMIC QUANTITIES TO BE CALCULATED
+ *******************************************************************************
+PM7 AUX LARGE THERMO(298,298) LET ISOTOPE BONDS DUMP=30M ITRY=15000 T=14D THREADS=30 CHARGE=-1 SINGLET eps=78.4 RELSCF=1
+ Title: ASE calculation
+
+   ATOM   CHEMICAL          X               Y               Z
+  NUMBER   SYMBOL      (ANGSTROMS)     (ANGSTROMS)     (ANGSTROMS)
+
+     1       C          0.43476639  *   1.33171199  *   0.42269149  *
+     2       C          1.07044972  *   0.74957429  *  -0.67941761  *
+     3       C          0.80131956  *  -0.58391004  *  -1.01532273  *
+     4       C         -0.10225825  *  -1.31508739  *  -0.23091193  *
+     5       C         -0.72345029  *  -0.70866077  *   0.86467903  *
+     6       C         -0.47290520  *   0.62139926  *   1.21047233  *
+     7       H          1.77749504  *   1.33711895  *  -1.28216190  *
+     8       H         -0.33162746  *  -2.35892714  *  -0.48707687  *
+     9       H         -0.97617648  *   1.08957995  *   2.06844151  *
+    10       N         -1.66099780  *  -1.47601578  *   1.65472541  *
+    11       O         -2.22049968  *  -0.93855635  *   2.60023210  *
+    12       O         -1.87328818  *  -2.64369689  *   1.35744388  *
+    13       C          1.43563308  *  -1.22108711  *  -2.15050530  *
+    14       H          3.59152106  *  -1.10760130  *  -1.92463313  *
+    15       C          1.76385226  *  -2.67432861  *  -2.07932004  *
+    16       H          2.55976602  *  -2.96850938  *  -2.78122579  *
+    17       H          0.89626551  *  -3.30689586  *  -2.32641801  *
+    18       H          2.09193773  *  -2.97072284  *  -1.07080815  *
+    19       N          1.56994264  *  -0.56827721  *  -3.32324036  *
+    20       O          2.07393738  *  -1.13016569  *  -4.32528392  *
+    21       O          1.23291564  *   0.63440858  *  -3.44394729  *
+    22       O          7.35609218  *  -0.70969021  *  -3.05734910  *
+    23       H          7.93873413  *  -0.94119217  *  -2.32803564  *
+    24       N          0.72767139  *   2.70942385  *   0.75574114  *
+    25       O          0.17914414  *   3.21500572  *   1.72484555  *
+    26       O          1.51667098  *   3.33310637  *   0.05961957  *
+    27       H          5.09016846  *  -1.22012572  *  -0.99732530  *
+    28       H          6.46375004  *  -0.83303718  *  -2.70259428  *
+    29       O          4.95035729  *  -1.09360411  *  -1.93041806  *
+
+
+
+          CARTESIAN COORDINATES 
+
+    NO.       ATOM           X           Y           Z
+
+     1         C          0.4348      1.3317      0.4227
+     2         C          1.0704      0.7496     -0.6794
+     3         C          0.8013     -0.5839     -1.0153
+     4         C         -0.1023     -1.3151     -0.2309
+     5         C         -0.7235     -0.7087      0.8647
+     6         C         -0.4729      0.6214      1.2105
+     7         H          1.7775      1.3371     -1.2822
+     8         H         -0.3316     -2.3589     -0.4871
+     9         H         -0.9762      1.0896      2.0684
+    10         N         -1.6610     -1.4760      1.6547
+    11         O         -2.2205     -0.9386      2.6002
+    12         O         -1.8733     -2.6437      1.3574
+    13         C          1.4356     -1.2211     -2.1505
+    14         H          3.5915     -1.1076     -1.9246
+    15         C          1.7639     -2.6743     -2.0793
+    16         H          2.5598     -2.9685     -2.7812
+    17         H          0.8963     -3.3069     -2.3264
+    18         H          2.0919     -2.9707     -1.0708
+    19         N          1.5699     -0.5683     -3.3232
+    20         O          2.0739     -1.1302     -4.3253
+    21         O          1.2329      0.6344     -3.4439
+    22         O          7.3561     -0.7097     -3.0573
+    23         H          7.9387     -0.9412     -2.3280
+    24         N          0.7277      2.7094      0.7557
+    25         O          0.1791      3.2150      1.7248
+    26         O          1.5167      3.3331      0.0596
+    27         H          5.0902     -1.2201     -0.9973
+    28         H          6.4638     -0.8330     -2.7026
+    29         O          4.9504     -1.0936     -1.9304
+
+ General Reference for PM7:
+ "Optimization of Parameters for Semiempirical Methods VI: More Modifications to the 
+ NDDO Approximations and Re-optimization of Parameters", J. J. P. Stewart, J. Mol. Mod., 1:32, 19 (2013)
+ https://link.springer.com/article/10.1007/s00894-012-1667-x
+
+           Empirical Formula: C8 H10 N3 O8  =    29 atoms
+
+
+
+      MOLECULAR POINT GROUP   :   C1  
+
+
+ SINGLET STATE CALCULATION
+
+
+      RHF CALCULATION, NO. OF DOUBLY OCCUPIED LEVELS = 53
+
