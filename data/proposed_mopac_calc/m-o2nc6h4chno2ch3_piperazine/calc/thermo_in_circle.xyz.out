@@ -1,0 +1,340 @@
+ *******************************************************************************
+ **                                                                           **
+ **                              MOPAC v22.0.6                                **
+ **                                                                           **
+ *******************************************************************************
+ **          Digital Object Identifier (DOI): 10.5281/zenodo.6511958          **
+ **    Visit the DOI location for information on how to cite this program.    **
+ *******************************************************************************
+
+                              PM7 CALCULATION RESULTS
+
+ *******************************************************************************
+ *  CALCULATION DONE:                                Sun Mar 24 12:53:31 2024  *
+ *  PM7        - The PM7 Hamiltonian to be used
+ *  DOUBLET    - SPIN STATE DEFINED AS A DOUBLET
+ *
+ *
+ *
+ *                 CHARGE ON SYSTEM = 0
+ *
+ *
+ *
+ *  EPS=78.4   - USE ANDREAS KLAMT'S COSMO IMPLICIT SOLVATION MODEL
+ *  LET        - OVERRIDE SOME SAFETY CHECKS
+ *  THREADS    - USE A MAXIMUM OF 30 THREADS
+ *  T=         - A TIME OF 14.0 DAYS REQUESTED
+ *  DUMP=N     - RESTART FILE WRITTEN EVERY 30.0 MINUTES REQUESTED
+ *  RELSCF     - DEFAULT SCF CRITERION MULTIPLIED BY 1.0000
+ *              (DEFAULT SCF CRITERION = 0.00010)
+ *  ITRY=      - DO A MAXIMUM OF 15000 ITERATIONS FOR SCF
+ *  AUX        - OUTPUT AUXILIARY INFORMATION
+ *  ISOTOPE    - SAVE THE FORCE MATRIX FOR USE LATER
+ *  BONDS      - FINAL BOND-ORDER MATRIX TO BE PRINTED
+ *  LARGE      - EXPANDED OUTPUT TO BE PRINTED
+ *  THERMO     - THERMODYNAMIC QUANTITIES TO BE CALCULATED
+ *******************************************************************************
+PM7 AUX LARGE THERMO(298,298) LET ISOTOPE BONDS DUMP=30M ITRY=15000 T=14D THREADS=30 CHARGE=0 DOUBLET eps=78.4 RELSCF=1
+ Title: ASE calculation
+
+   ATOM   CHEMICAL          X               Y               Z
+  NUMBER   SYMBOL      (ANGSTROMS)     (ANGSTROMS)     (ANGSTROMS)
+
+     1       C          0.87968944  *   0.79294869  *  -0.59929628  *
+     2       C          0.98938353  *  -0.49260262  *  -1.12484458  *
+     3       C         -0.07737316  *  -1.38997726  *  -1.01964008  *
+     4       C         -1.26224931  *  -0.99825738  *  -0.39104460  *
+     5       C         -1.36190224  *   0.30149732  *   0.10971864  *
+     6       C         -0.29861334  *   1.20494004  *   0.01658617  *
+     7       H          1.72317580  *   1.48302672  *  -0.67081161  *
+     8       H          1.91288530  *  -0.79512587  *  -1.62142256  *
+     9       H         -2.08903374  *  -1.70697589  *  -0.30126251  *
+    10       H         -0.38209445  *   2.21631179  *   0.41842432  *
+    11       N         -2.61885017  *   0.74451586  *   0.65422377  *
+    12       O         -2.61836439  *   1.82982367  *   1.37111420  *
+    13       O         -3.43365168  *  -0.16560199  *   1.10652197  *
+    14       C          0.02921114  *  -2.74619421  *  -1.56009034  *
+    15       C          0.13887518  *  -3.87949093  *  -0.59886735  *
+    16       H          0.47092907  *  -4.81212571  *  -1.07992788  *
+    17       H         -0.82901748  *  -4.09787335  *  -0.11930644  *
+    18       H          0.85214994  *  -3.65916783  *   0.20890674  *
+    19       N         -0.31931442  *  -2.96862852  *  -2.84615580  *
+    20       O         -0.33149661  *  -4.12550049  *  -3.32967626  *
+    21       O         -0.56042811  *  -2.01223661  *  -3.62192326  *
+    22       D          1.86075349  *  -2.87559766  *  -2.02705790  *
+    23       C          5.02113852  *  -6.29655334  *  -5.06658767  *
+    24       N          4.00504310  *  -6.73634488  *  -5.85349674  *
+    25       C          2.63492682  *  -6.24711933  *  -5.64344850  *
+    26       C          2.47271883  *  -5.49815760  *  -4.31376598  *
+    27       N          3.56923091  *  -4.47505799  *  -4.18558863  *
+    28       C          4.89864798  *  -5.18431780  *  -4.09124995  *
+    29       H          5.98466256  *  -6.77941632  *  -5.14801902  *
+    30       H          4.07714102  *  -7.66858821  *  -6.25464074  *
+    31       H          1.90983645  *  -7.09519561  *  -5.68924963  *
+    32       H          2.37688399  *  -5.57626002  *  -6.50288239  *
+    33       H          1.47834028  *  -4.98812524  *  -4.27249331  *
+    34       H          2.51116660  *  -6.19796610  *  -3.44713789  *
+    35       H          3.56615605  *  -3.84753329  *  -5.01928494  *
+    36       H          5.71301807  *  -4.43128127  *  -4.24341925  *
+    37       H          5.02864468  *  -5.57005023  *  -3.04710296  *
+    38       H          3.38046681  *  -3.37104503  *  -1.29375057  *
+    39       H          3.41121027  *  -3.84527609  *  -3.29784100  *
+    40       O          3.18084335  *  -2.91102104  *  -2.11050202  *
+
+
+                                Isotopes Used
+
+              Atom:   22  H  Default mass  1.0079,  mass used:  2.0140 amu
+
+
+          CARTESIAN COORDINATES 
+
+    NO.       ATOM           X           Y           Z
+
+     1         C          0.8797      0.7929     -0.5993
+     2         C          0.9894     -0.4926     -1.1248
+     3         C         -0.0774     -1.3900     -1.0196
+     4         C         -1.2622     -0.9983     -0.3910
+     5         C         -1.3619      0.3015      0.1097
+     6         C         -0.2986      1.2049      0.0166
+     7         H          1.7232      1.4830     -0.6708
+     8         H          1.9129     -0.7951     -1.6214
+     9         H         -2.0890     -1.7070     -0.3013
+    10         H         -0.3821      2.2163      0.4184
+    11         N         -2.6189      0.7445      0.6542
+    12         O         -2.6184      1.8298      1.3711
+    13         O         -3.4337     -0.1656      1.1065
+    14         C          0.0292     -2.7462     -1.5601
+    15         C          0.1389     -3.8795     -0.5989
+    16         H          0.4709     -4.8121     -1.0799
+    17         H         -0.8290     -4.0979     -0.1193
+    18         H          0.8521     -3.6592      0.2089
+    19         N         -0.3193     -2.9686     -2.8462
+    20         O         -0.3315     -4.1255     -3.3297
+    21         O         -0.5604     -2.0122     -3.6219
+    22         H          1.8608     -2.8756     -2.0271
+    23         C          5.0211     -6.2966     -5.0666
+    24         N          4.0050     -6.7363     -5.8535
+    25         C          2.6349     -6.2471     -5.6434
+    26         C          2.4727     -5.4982     -4.3138
+    27         N          3.5692     -4.4751     -4.1856
+    28         C          4.8986     -5.1843     -4.0912
+    29         H          5.9847     -6.7794     -5.1480
+    30         H          4.0771     -7.6686     -6.2546
+    31         H          1.9098     -7.0952     -5.6892
+    32         H          2.3769     -5.5763     -6.5029
+    33         H          1.4783     -4.9881     -4.2725
+    34         H          2.5112     -6.1980     -3.4471
+    35         H          3.5662     -3.8475     -5.0193
+    36         H          5.7130     -4.4313     -4.2434
+    37         H          5.0286     -5.5701     -3.0471
+    38         H          3.3805     -3.3710     -1.2938
+    39         H          3.4112     -3.8453     -3.2978
+    40         O          3.1808     -2.9110     -2.1105
+
+ General Reference for PM7:
+ "Optimization of Parameters for Semiempirical Methods VI: More Modifications to the 
+ NDDO Approximations and Re-optimization of Parameters", J. J. P. Stewart, J. Mol. Mod., 1:32, 19 (2013)
+ https://link.springer.com/article/10.1007/s00894-012-1667-x
+
+           Empirical Formula: C12 H19 N4 O5  =    40 atoms
+
+
+
+      MOLECULAR POINT GROUP   :   C1  
+
+
+ DOUBLET STATE CALCULATION
+
+
+          UHF CALCULATION, NO. OF ALPHA ELECTRONS =   59
+                           NO. OF BETA  ELECTRONS =   58
+  SCF CRITERION =    0.1000E-03
+
+
+          HEAT OF FORMATION =     -27.793219 KCALS/MOLE
+
+
+          CARTESIAN COORDINATE DERIVATIVES
+
+   NUMBER  ATOM         X            Y            Z
+
+     1       C      2.077311    -1.529821     2.310168
+     2       C      0.711416    -0.549045     0.171646
+     3       C     -2.359428    -2.364487     2.663829
+     4       C     -3.320952     1.811673    -0.399430
+     5       C      3.793582    -9.152376   -31.399870
+     6       C      0.491537     3.677514    -0.538377
+     7       H      0.309766     0.603254    -0.393429
+     8       H     -0.961607     1.459640    -0.126192
+     9       H     -0.503212    -2.190164    -1.289705
+    10       H      2.485641    -0.388756    -1.014988
+    11       N     51.633992   -76.003183   139.015679
+    12       O    -93.065564     3.791860   -49.420638
+    13       O     38.382022    81.148292   -58.826760
+    14       C     -2.990959     9.466697    -0.342928
+    15       C      0.392091     0.212307     0.173290
+    16       H     -0.016204    -0.066502     0.113519
+    17       H     -0.114326    -0.144355     0.103919
+    18       H     -0.032640     0.151029     0.164655
+    19       N     -1.779121     0.249301    -2.478508
+    20       O      1.386197     0.129930     0.210569
+    21       O     -0.271791    -0.379969     1.331424
+    22       H     -7.993278    89.190618    34.533415
+    23       C     -0.029928    -0.098660     0.086793
+    24       N     -0.054373    -0.060823     0.050467
+    25       C     -0.115153     0.144918     0.002039
+    26       C     -0.036222    -0.027741    -0.131316
+    27       N      0.020263    -0.043554     0.050317
+    28       C     -0.096631     0.087808     0.090961
+    29       H      0.028287     0.172016     0.106495
+    30       H      0.194139     0.042218     0.017959
+    31       H      0.006929    -0.171337    -0.042817
+    32       H      0.030232     0.013118     0.027192
+    33       H     -0.055464     0.061260     0.022222
+    34       H      0.001412     0.079365     0.049206
+    35       H      0.081929    -0.164822    -0.006621
+    36       H     -0.080520     0.049222     0.128215
+    37       H     -0.069221     0.026043     0.028840
+    38       H      0.087561    -0.015807    -0.245717
+    39       H     -0.442093     0.171634    -0.235385
+    40       O     12.274430   -99.388184   -34.560047
+
+ DIPOLE           X         Y         Z       TOTAL
+ POINT-CHG.    13.710   -17.141    -5.577    22.647
+ HYBRID         0.072     1.004     0.207     1.028
+ SUM           13.782   -16.137    -5.370    21.891
+
+
+          GRADIENT NORM = 268.53992
+
+
+
+ ** GRADIENT IS VERY LARGE, BUT SINCE "LET" IS USED, CALCULATION WILL CONTINUE
+
+
+                              **** WARNING ****
+
+           GRADIENT IS VERY LARGE FOR A THERMO CALCULATION
+           RESULTS ARE LIKELY TO BE INACCURATE IF THERE ARE
+           ANY LOW-LYING VIBRATIONS (LESS THAN ABOUT 400CM-1)
+           GRADIENT NORM SHOULD BE LESS THAN ABOUT 1.3 FOR THERMO
+           TO GIVE ACCURATE RESULTS
+
+
+          TIME FOR SCF CALCULATION =    3.18
+
+          TIME FOR DERIVATIVES     =    0.05
+
+          MOLECULAR WEIGHT =  300.31
+
+
+
+          ROTATIONAL CONSTANTS IN CM(-1)
+
+          A =    0.02750163   B =    0.00341490   C =    0.00322157
+
+
+
+           PRINCIPAL MOMENTS OF INERTIA IN UNITS OF 10**(-40)*GRAM-CM**2
+
+          A =     1017.8579   B =     8197.2496   C =     8689.1777
+
+
+          ORIENTATION OF MOLECULE IN FORCE CALCULATION
+
+    NO.       ATOM         X         Y         Z
+
+     1          C      -3.5791   -0.3594   -0.2740
+     2          C      -2.1860   -0.3594   -0.2740
+     3          C      -1.4816    0.8481   -0.2740
+     4          C      -2.1735    2.0621   -0.2679
+     5          C      -3.5696    2.0423   -0.2453
+     6          C      -4.2844    0.8404   -0.2526
+     7          H      -4.1225   -1.3066   -0.2906
+     8          H      -1.6468   -1.3082   -0.2720
+     9          H      -1.6185    3.0033   -0.2794
+    10          H      -5.3758    0.8342   -0.2434
+    11          N      -4.2828    3.2869   -0.1230
+    12          O      -5.5547    3.2843   -0.3952
+    13          O      -3.6777    4.3695   -0.5213
+    14          C      -0.0179    0.8609   -0.2829
+    15          C       0.6739    1.2865   -1.5322
+    16          H       1.7421    1.0212   -1.5361
+    17          H       0.6183    2.3780   -1.6733
+    18          H       0.2221    0.8266   -2.4233
+    19          N       0.6451    0.8354    0.8938
+    20          O       1.8941    0.9352    0.9431
+    21          O       0.0362    0.6252    1.9707
+    22          H       0.4219   -0.9581   -0.5779
+    23          C       4.9741   -4.1280   -0.1789
+    24          N       5.5968   -3.3353    0.7316
+    25          C       4.9582   -2.0977    1.2020
+    26          C       3.7527   -1.6920    0.3433
+    27          N       2.8466   -2.8812    0.1697
+    28          C       3.5702   -3.9424   -0.6238
+    29          H       5.5263   -4.9495   -0.6129
+    30          H       6.6140   -3.3345    0.7518
+    31          H       5.7010   -1.2642    1.2268
+    32          H       4.6431   -2.2593    2.2650
+    33          H       3.1882   -0.8597    0.8324
+    34          H       4.0746   -1.3181   -0.6562
+    35          H       2.5818   -3.2630    1.1040
+    36          H       2.9969   -4.9003   -0.5389
+    37          H       3.5425   -3.6635   -1.7089
+    38          H       0.7221   -2.0437   -1.9285
+    39          H       1.9182   -2.5907   -0.3434
+    40          O       0.5900   -2.2033   -0.9927
+
+
+    FIRST DERIVATIVES WILL BE USED IN THE CALCULATION OF SECOND DERIVATIVES
+
+          ESTIMATED TIME TO COMPLETE CALCULATION =      775.31 SECONDS
+
+    FOR POINT-GROUP C1   THERE ARE   1 UNIQUE SYMMETRY FUNCTIONS.
+
+ STEP:   1 TIME =     0.33 SECS, INTEGRAL =      0.33 TIME LEFT:1209596.44
+ STEP:   2 TIME =     0.22 SECS, INTEGRAL =      0.55 TIME LEFT:1209596.22
+ STEP:   3 TIME =     0.27 SECS, INTEGRAL =      0.82 TIME LEFT:1209595.95
+ STEP:   4 TIME =     0.25 SECS, INTEGRAL =      1.07 TIME LEFT:1209595.70
+ STEP:   5 TIME =     0.21 SECS, INTEGRAL =      1.28 TIME LEFT:1209595.49
+ STEP:   6 TIME =     0.18 SECS, INTEGRAL =      1.46 TIME LEFT:1209595.31
+ STEP:   7 TIME =     0.30 SECS, INTEGRAL =      1.75 TIME LEFT:1209595.02
+ STEP:   8 TIME =     0.20 SECS, INTEGRAL =      1.95 TIME LEFT:1209594.82
+ STEP:   9 TIME =     0.18 SECS, INTEGRAL =      2.14 TIME LEFT:1209594.63
+ STEP:  10 TIME =     0.19 SECS, INTEGRAL =      2.33 TIME LEFT:1209594.44
+ STEP:  11 TIME =     0.18 SECS, INTEGRAL =      2.51 TIME LEFT:1209594.26
+ STEP:  12 TIME =     0.20 SECS, INTEGRAL =      2.71 TIME LEFT:1209594.06
+ STEP:  13 TIME =     0.18 SECS, INTEGRAL =      2.89 TIME LEFT:1209593.88
+ STEP:  14 TIME =     0.18 SECS, INTEGRAL =      3.07 TIME LEFT:1209593.70
+ STEP:  15 TIME =     0.18 SECS, INTEGRAL =      3.24 TIME LEFT:1209593.53
+ STEP:  16 TIME =     0.19 SECS, INTEGRAL =      3.43 TIME LEFT:1209593.34
+ STEP:  17 TIME =     0.19 SECS, INTEGRAL =      3.62 TIME LEFT:1209593.15
+ STEP:  18 TIME =     0.20 SECS, INTEGRAL =      3.82 TIME LEFT:1209592.95
+ STEP:  19 TIME =     0.18 SECS, INTEGRAL =      3.99 TIME LEFT:1209592.78
+ STEP:  20 TIME =     0.20 SECS, INTEGRAL =      4.19 TIME LEFT:1209592.58
+ STEP:  21 TIME =     0.20 SECS, INTEGRAL =      4.39 TIME LEFT:1209592.38
+ STEP:  22 TIME =     0.33 SECS, INTEGRAL =      4.72 TIME LEFT:1209592.05
+ STEP:  23 TIME =     0.25 SECS, INTEGRAL =      4.97 TIME LEFT:1209591.80
+ STEP:  24 TIME =     0.20 SECS, INTEGRAL =      5.17 TIME LEFT:1209591.60
+ STEP:  25 TIME =     0.27 SECS, INTEGRAL =      5.45 TIME LEFT:1209591.32
+ STEP:  26 TIME =     0.31 SECS, INTEGRAL =      5.76 TIME LEFT:1209591.01
+ STEP:  27 TIME =     0.18 SECS, INTEGRAL =      5.94 TIME LEFT:1209590.83
+ STEP:  28 TIME =     0.18 SECS, INTEGRAL =      6.12 TIME LEFT:1209590.65
+ STEP:  29 TIME =     0.21 SECS, INTEGRAL =      6.33 TIME LEFT:1209590.44
+ STEP:  30 TIME =     0.19 SECS, INTEGRAL =      6.52 TIME LEFT:1209590.25
+ STEP:  31 TIME =     0.25 SECS, INTEGRAL =      6.77 TIME LEFT:1209590.00
+ STEP:  32 TIME =     0.23 SECS, INTEGRAL =      7.00 TIME LEFT:1209589.77
+ STEP:  33 TIME =     0.25 SECS, INTEGRAL =      7.25 TIME LEFT:1209589.52
+ STEP:  34 TIME =     0.26 SECS, INTEGRAL =      7.51 TIME LEFT:1209589.26
+ STEP:  35 TIME =     0.21 SECS, INTEGRAL =      7.72 TIME LEFT:1209589.05
+ STEP:  36 TIME =     0.22 SECS, INTEGRAL =      7.94 TIME LEFT:1209588.83
+ STEP:  37 TIME =     0.18 SECS, INTEGRAL =      8.12 TIME LEFT:1209588.64
+ STEP:  38 TIME =     0.21 SECS, INTEGRAL =      8.34 TIME LEFT:1209588.43
+ STEP:  39 TIME =     0.20 SECS, INTEGRAL =      8.54 TIME LEFT:1209588.23
+ STEP:  40 TIME =     0.25 SECS, INTEGRAL =      8.78 TIME LEFT:1209587.99
+ STEP:  41 TIME =     0.19 SECS, INTEGRAL =      8.97 TIME LEFT:1209587.80
+ STEP:  42 TIME =     0.18 SECS, INTEGRAL =      9.16 TIME LEFT:1209587.61
+ STEP:  43 TIME =     0.21 SECS, INTEGRAL =      9.37 TIME LEFT:1209587.40
+ STEP:  44 TIME =     0.20 SECS, INTEGRAL =      9.57 TIME LEFT:1209587.20
+ STEP:  45 TIME =     0.22 SECS, INTEGRAL =      9.79 TIME LEFT:1209586.98

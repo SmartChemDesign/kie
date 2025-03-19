@@ -1,0 +1,246 @@
+ *******************************************************************************
+ **                                                                           **
+ **                              MOPAC v22.0.6                                **
+ **                                                                           **
+ *******************************************************************************
+ **          Digital Object Identifier (DOI): 10.5281/zenodo.6511958          **
+ **    Visit the DOI location for information on how to cite this program.    **
+ *******************************************************************************
+
+                              PM7 CALCULATION RESULTS
+
+ *******************************************************************************
+ *  CALCULATION DONE:                                Sat Mar 23 22:55:31 2024  *
+ *  PM7        - The PM7 Hamiltonian to be used
+ *  SINGLET    - SPIN STATE DEFINED AS A SINGLET
+ *
+ *
+ *
+ *                 CHARGE ON SYSTEM = -1
+ *
+ *
+ *
+ *  EPS=78.4   - USE ANDREAS KLAMT'S COSMO IMPLICIT SOLVATION MODEL
+ *  LET        - OVERRIDE SOME SAFETY CHECKS
+ *  THREADS    - USE A MAXIMUM OF 30 THREADS
+ *  T=         - A TIME OF 14.0 DAYS REQUESTED
+ *  DUMP=N     - RESTART FILE WRITTEN EVERY 30.0 MINUTES REQUESTED
+ *  RELSCF     - DEFAULT SCF CRITERION MULTIPLIED BY 1.0000
+ *              (DEFAULT SCF CRITERION = 0.00010)
+ *  ITRY=      - DO A MAXIMUM OF 15000 ITERATIONS FOR SCF
+ *  AUX        - OUTPUT AUXILIARY INFORMATION
+ *  ISOTOPE    - SAVE THE FORCE MATRIX FOR USE LATER
+ *  BONDS      - FINAL BOND-ORDER MATRIX TO BE PRINTED
+ *  LARGE      - EXPANDED OUTPUT TO BE PRINTED
+ *  THERMO     - THERMODYNAMIC QUANTITIES TO BE CALCULATED
+ *******************************************************************************
+PM7 AUX LARGE THERMO(298,298) LET ISOTOPE BONDS DUMP=30M ITRY=15000 T=14D THREADS=30 CHARGE=-1 SINGLET eps=78.4 RELSCF=1
+ Title: ASE calculation
+
+   ATOM   CHEMICAL          X               Y               Z
+  NUMBER   SYMBOL      (ANGSTROMS)     (ANGSTROMS)     (ANGSTROMS)
+
+     1       C          0.15133056  *   1.25815731  *   0.58990242  *
+     2       C          0.49655755  *   1.03336450  *  -0.73895680  *
+     3       C          0.31535527  *  -0.22534334  *  -1.33756655  *
+     4       C         -0.20048803  *  -1.26510731  *  -0.55437864  *
+     5       C         -0.52252798  *  -1.03023653  *   0.78582389  *
+     6       C         -0.36266147  *   0.22898445  *   1.37145897  *
+     7       H          0.28269623  *   2.25214218  *   1.02575490  *
+     8       H          0.89355158  *   1.86478755  *  -1.33092547  *
+     9       H         -0.37505606  *  -2.25552711  *  -0.98774974  *
+    10       H         -0.62983850  *   0.40235426  *   2.41792454  *
+    11       N         -1.03815560  *  -2.11466288  *   1.58420133  *
+    12       O         -1.36168699  *  -1.90393774  *   2.74724298  *
+    13       O         -1.13806418  *  -3.23203287  *   1.09043823  *
+    14       C          0.61285671  *  -0.43931820  *  -2.74836157  *
+    15       H          2.60591490  *  -0.21740438  *  -2.83393729  *
+    16       C          0.65444178  *  -1.84057710  *  -3.27304001  *
+    17       H          1.03436814  *  -1.90389024  *  -4.30300502  *
+    18       H         -0.36402296  *  -2.26855431  *  -3.30379972  *
+    19       H          1.26282024  *  -2.51088514  *  -2.65286549  *
+    20       N          0.22755597  *   0.51565551  *  -3.64802583  *
+    21       O          0.39763155  *   0.35120423  *  -4.87456135  *
+    22       O         -0.25514191  *   1.60689060  *  -3.27841337  *
+    23       O          6.62775694  *   1.37578569  *  -2.92278397  *
+    24       H          6.08100891  *   0.66867238  *  -2.89280817  *
+    25       H          3.86191951  *   0.37948105  *  -2.02731936  *
+    26       H          3.74838043  *   0.60523836  *  -3.60749613  *
+    27       O          3.64019253  *  -0.12176987  *  -2.89472273  *
+
+
+
+          CARTESIAN COORDINATES 
+
+    NO.       ATOM           X           Y           Z
+
+     1         C          0.1513      1.2582      0.5899
+     2         C          0.4966      1.0334     -0.7390
+     3         C          0.3154     -0.2253     -1.3376
+     4         C         -0.2005     -1.2651     -0.5544
+     5         C         -0.5225     -1.0302      0.7858
+     6         C         -0.3627      0.2290      1.3715
+     7         H          0.2827      2.2521      1.0258
+     8         H          0.8936      1.8648     -1.3309
+     9         H         -0.3751     -2.2555     -0.9877
+    10         H         -0.6298      0.4024      2.4179
+    11         N         -1.0382     -2.1147      1.5842
+    12         O         -1.3617     -1.9039      2.7472
+    13         O         -1.1381     -3.2320      1.0904
+    14         C          0.6129     -0.4393     -2.7484
+    15         H          2.6059     -0.2174     -2.8339
+    16         C          0.6544     -1.8406     -3.2730
+    17         H          1.0344     -1.9039     -4.3030
+    18         H         -0.3640     -2.2686     -3.3038
+    19         H          1.2628     -2.5109     -2.6529
+    20         N          0.2276      0.5157     -3.6480
+    21         O          0.3976      0.3512     -4.8746
+    22         O         -0.2551      1.6069     -3.2784
+    23         O          6.6278      1.3758     -2.9228
+    24         H          6.0810      0.6687     -2.8928
+    25         H          3.8619      0.3795     -2.0273
+    26         H          3.7484      0.6052     -3.6075
+    27         O          3.6402     -0.1218     -2.8947
+
+ General Reference for PM7:
+ "Optimization of Parameters for Semiempirical Methods VI: More Modifications to the 
+ NDDO Approximations and Re-optimization of Parameters", J. J. P. Stewart, J. Mol. Mod., 1:32, 19 (2013)
+ https://link.springer.com/article/10.1007/s00894-012-1667-x
+
+           Empirical Formula: C8 H11 N2 O6  =    27 atoms
+
+
+
+      MOLECULAR POINT GROUP   :   C1  
+
+
+ SINGLET STATE CALCULATION
+
+
+      RHF CALCULATION, NO. OF DOUBLY OCCUPIED LEVELS = 45
+
+  SCF CRITERION =    0.1000E-03
+
+
+          HEAT OF FORMATION =    -188.085962 KCALS/MOLE
+
+
+          CARTESIAN COORDINATE DERIVATIVES
+
+   NUMBER  ATOM         X            Y            Z
+
+     1       C      0.372717     0.424828     0.472764
+     2       C     -0.801158     0.696651     0.156766
+     3       C     -0.172976    -0.255907     0.087235
+     4       C     -0.190289    -0.026243     0.127977
+     5       C     -0.318089     0.261356     0.480272
+     6       C      0.604403    -0.288087     0.572963
+     7       H     -0.090457     0.010329     0.287912
+     8       H      0.092511     0.035964     1.105120
+     9       H     -0.148547     0.351412     0.743045
+    10       H     -0.385388     0.045440    -0.068150
+    11       N     -0.189995    -0.094623     0.167275
+    12       O     -0.134041    -0.096133     0.023488
+    13       O     -0.065739     0.295348    -0.117765
+    14       C     -0.048081    -0.149022    -6.595419
+    15       H      3.848320    -5.381711   -13.948427
+    16       C     -0.410088     0.541370     1.211405
+    17       H      0.065390     0.867049     1.896644
+    18       H     -0.787110    -0.599728     1.675209
+    19       H      0.039536     1.299875     1.449491
+    20       N      1.108834    -0.292581     2.662426
+    21       O     -1.485815    -0.461874    -0.110537
+    22       O     -0.273563     2.330231     2.318196
+    23       O     -0.084538     0.215962    -0.003167
+    24       H     -0.204852     0.016292     0.885681
+    25       H      1.192578     0.901134     0.497008
+    26       H     -0.541291     0.044483     0.419484
+    27       O     -0.992222    -0.691775     3.603150
+
+ DIPOLE           X         Y         Z       TOTAL
+ POINT-CHG.   -20.070     4.589     9.119    22.517
+ HYBRID        -0.458     0.670     1.095     1.363
+ SUM          -20.528     5.259    10.214    23.524
+
+
+          GRADIENT NORM =  18.46938
+
+
+
+ ** GRADIENT IS VERY LARGE, BUT SINCE "LET" IS USED, CALCULATION WILL CONTINUE
+
+
+                              **** WARNING ****
+
+           GRADIENT IS VERY LARGE FOR A THERMO CALCULATION
+           RESULTS ARE LIKELY TO BE INACCURATE IF THERE ARE
+           ANY LOW-LYING VIBRATIONS (LESS THAN ABOUT 400CM-1)
+           GRADIENT NORM SHOULD BE LESS THAN ABOUT 1.0 FOR THERMO
+           TO GIVE ACCURATE RESULTS
+
+
+          TIME FOR SCF CALCULATION =    0.14
+
+          TIME FOR DERIVATIVES     =    0.02
+
+          MOLECULAR WEIGHT =  231.18
+
+
+
+          ROTATIONAL CONSTANTS IN CM(-1)
+
+          A =    0.02030794   B =    0.00791992   C =    0.00710854
+
+
+
+           PRINCIPAL MOMENTS OF INERTIA IN UNITS OF 10**(-40)*GRAM-CM**2
+
+          A =     1378.4142   B =     3534.4721   C =     3937.9037
+
+
+          ORIENTATION OF MOLECULE IN FORCE CALCULATION
+
+    NO.       ATOM         X         Y         Z
+
+     1          C      -2.1135   -1.2424    0.3663
+     2          C      -0.7223   -1.2424    0.3663
+     3          C       0.0079   -0.0414    0.3663
+     4          C      -0.7002    1.1663    0.3399
+     5          C      -2.0981    1.1507    0.3180
+     6          C      -2.8213   -0.0454    0.3415
+     7          H      -2.6579   -2.1903    0.3875
+     8          H      -0.1927   -2.2006    0.3919
+     9          H      -0.1695    2.1240    0.3586
+    10          H      -3.9152   -0.0434    0.3362
+    11          N      -2.8134    2.4020    0.2752
+    12          O      -4.0387    2.3951    0.2986
+    13          O      -2.1861    3.4528    0.2084
+    14          C       1.4638   -0.0440    0.4364
+    15          H       2.0042   -0.8632   -1.3145
+    16          C       2.2017    1.2312    0.1721
+    17          H       3.2900    1.0920    0.0984
+    18          H       2.0475    1.9425    1.0038
+    19          H       1.8686    1.7353   -0.7438
+    20          N       2.0732   -0.9089    1.3027
+    21          O       3.3135   -0.9049    1.4510
+    22          O       1.4241   -1.7693    1.9342
+    23          O       2.8297   -3.5974   -4.5648
+    24          H       2.7796   -2.7583   -4.2594
+    25          H       1.4490   -1.7428   -2.5403
+    26          H       2.8937   -2.0530   -1.9258
+    27          O       2.3035   -1.2712   -2.2237
+
+
+    FIRST DERIVATIVES WILL BE USED IN THE CALCULATION OF SECOND DERIVATIVES
+
+          ESTIMATED TIME TO COMPLETE CALCULATION =       26.58 SECONDS
+
+    FOR POINT-GROUP C1   THERE ARE   1 UNIQUE SYMMETRY FUNCTIONS.
+
+ STEP:   1 TIME =     0.08 SECS, INTEGRAL =      0.08 TIME LEFT:1209599.76
+ STEP:   2 TIME =     0.08 SECS, INTEGRAL =      0.16 TIME LEFT:1209599.68
+ STEP:   3 TIME =     0.08 SECS, INTEGRAL =      0.23 TIME LEFT:1209599.60
+ STEP:   4 TIME =     0.08 SECS, INTEGRAL =      0.31 TIME LEFT:1209599.52
+ STEP:   5 TIME =     0.08 SECS, INTEGRAL =      0.39 TIME LEFT:1209599.45
+ STEP:   6 TIME =     0.08 SECS, INTEGRAL =      0.47 TIME LEFT:1209599.37
+ STEP:   7 TIME =     0.08 SECS, INTEGRAL =      0.55 TIME LEFT:1209599.29
