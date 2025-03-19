@@ -1,6 +1,0 @@
-dict(charge=0,
-     maxiter=2000,
-     mult=2,
-     orcablocks='%pal nprocs 102 end\n%cpcm epsilon 78.4 end',
-     orcasimpleinput='NUMFREQ B3LYP def2-TZVP CPCM D3',
-     task='gradient')
