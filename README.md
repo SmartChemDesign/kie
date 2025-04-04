@@ -51,6 +51,7 @@ Example YOUR_SYSTEM_NAME.sh file:
 ```
 #!/bin/bash
 #export RSH_COMMAND="/usr/bir/ssh -x"
+export OMP_NUM_THREADS=70
 python3 main.py -x opted_h2o.xyz --eps XX.X --charge X --mult XXXXXXX --step X.XX --isotope X \
 --moving_atom_h XX --dest_atom XX --h_neighbour XX --place /mop/YOUR_SYSTEM_NAME/calc --threads 100
 ```
