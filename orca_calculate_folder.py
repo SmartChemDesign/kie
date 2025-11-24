@@ -283,25 +283,52 @@ def calculate_dir(dir, lom_path_orca, sh_file):
             print("neb error")
         errorcode = proc.wait()
 
+# ============= НОВЫЙ БЛОК: Оптимизация TS после NEB =============
+    # Create folder for TS optimization
+    create_folder_my(f"{dir}/orca/ts_opt")
+    shutil.copy(f"{dir}/orca/neb/neb.xyz", f"{dir}/orca/ts_opt/ts_init.xyz")
+    
+    # Run TS optimization
+    print("Running TS optimization...")
+    ts_init_xyz = take_xyz_from_dir(f"{dir}/orca/ts_opt", ".xyz")
+    orca_calculate_xyz(ts_init_xyz, 
+                       lom_path_orca=lom_path_orca, 
+                       label=f"{dir}/orca/ts_opt/ts_opt",
+                       charge=start_charge,
+                       mult=start_mult,
+                       eps=start_eps,
+                       orcasimpleinput='OptTS B3LYP def2-TZVP CPCM D3',
+                       orcablocks='%pal nprocs 102 end')
+    
+    # Check if TS optimization finished normally
+    if not check_norm_end(f"{dir}/orca/ts_opt/ts_opt.out"):
+        print("WARNING: TS optimization did not finish normally!")
+# ============= КОНЕЦ НОВОГО БЛОКА =============
+
 # Create freq_folders thermo_ts
     create_folder_my(f"{dir}/orca/freq_H")
     create_folder_my(f"{dir}/orca/freq_D")
-    shutil.copy(f"{dir}/orca/neb/neb.xyz", f"{dir}/orca/freq_H/neb.xyz")
-    shutil.copy(f"{dir}/orca/neb/neb.xyz", f"{dir}/orca/freq_D/neb.xyz")
+    
+    # Use optimized TS structure instead of NEB structure
+    shutil.copy(f"{dir}/orca/ts_opt/ts_opt.xyz", f"{dir}/orca/freq_H/ts_opt.xyz")
+    shutil.copy(f"{dir}/orca/ts_opt/ts_opt.xyz", f"{dir}/orca/freq_D/ts_opt.xyz")
+    
 # Run thermo freq_H
     freq_H_xyz = take_xyz_from_dir(f"{dir}/orca/freq_H", ".xyz")
     orca_calculate_xyz(freq_H_xyz, lom_path_orca=lom_path_orca, label = f"{dir}/orca/freq_H/f_H",
-                       charge=start_charge,mult=start_mult, orcasimpleinput='NUMFREQ B3LYP def2-TZVP CPCM D3')
+                       charge=start_charge,mult=start_mult, eps=start_eps,
+                       orcasimpleinput='NUMFREQ B3LYP def2-TZVP CPCM D3')
 
 # Run thermo freq_D
     freq_D_xyz = take_xyz_from_dir(f"{dir}/orca/freq_D", ".xyz")
     orca_calculate_xyz(freq_D_xyz, lom_path_orca=lom_path_orca,
                        label = f"{dir}/orca/freq_D/f_D", charge=start_charge,mult=start_mult,
+                       eps=start_eps,
                        orcasimpleinput='NUMFREQ B3LYP def2-TZVP CPCM D3', isotope="2",
                        change_isotope=True, sh_file= f"{sh_file}")
 
 
-# Create freq_folders thermo_ts
+# Create freq_folders thermo_start (без изменений)
     create_folder_my(f"{dir}/orca/start_freq_H")
     create_folder_my(f"{dir}/orca/start_freq_D")
     shutil.copy(f"{dir}/orca/orca_start/start.xyz", f"{dir}/orca/start_freq_H/neb.xyz")
@@ -310,15 +337,16 @@ def calculate_dir(dir, lom_path_orca, sh_file):
 # Run thermo start_freq_H
     start_freq_H_xyz = take_xyz_from_dir(f"{dir}/orca/start_freq_H", ".xyz")
     orca_calculate_xyz(start_freq_H_xyz, lom_path_orca=lom_path_orca, label = f"{dir}/orca/start_freq_H/start_f_H",
-                       charge=start_charge,mult=start_mult, orcasimpleinput='NUMFREQ B3LYP def2-TZVP CPCM D3')
+                       charge=start_charge,mult=start_mult, eps=start_eps,
+                       orcasimpleinput='NUMFREQ B3LYP def2-TZVP CPCM D3')
 
 # Run thermo start_freq_D
     start_freq_D_xyz = take_xyz_from_dir(f"{dir}/orca/start_freq_D", ".xyz")
     orca_calculate_xyz(start_freq_D_xyz, lom_path_orca=lom_path_orca,
                        label = f"{dir}/orca/start_freq_D/start_f_D", charge=start_charge,mult=start_mult,
+                       eps=start_eps,
                        orcasimpleinput='NUMFREQ B3LYP def2-TZVP CPCM D3', isotope="2",
                        change_isotope=True, sh_file= f"{sh_file}")
-
 
 
 
